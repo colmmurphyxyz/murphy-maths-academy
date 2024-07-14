@@ -1,0 +1,66 @@
+@import url(root.css);
+
+html {
+    background: var(--beige);
+}
+
+body {
+    font-family: 'Roboto';
+    max-width: 75em;
+    margin: 0 auto;
+    border: 2px solid var(--main-color);
+    background: white;
+}
+
+main {
+    margin-top: 4em;
+}
+
+#prices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#prices > article {
+    width: 20em;
+    margin: 2em;
+
+    border-radius: 1rem;
+}
+
+@media (hover: hover) {
+    #prices > article:hover {
+        transform: scale(1.1);
+        transition: 0.4s all linear;
+    }
+}
+
+#prices > article > h3 {
+    text-align: center;
+    color: white;
+    border-radius: 2em;
+}
+
+#prices > article > b {
+    display: block;
+    text-align: center; 
+    text-decoration: underline;    
+}
+
+#prices > article > p {
+    text-align: justify;
+    padding: 0 1em;
+}
+
+#prices > article > ul {
+    padding-left: 5em;
+}
+
+article[class^='class-'] {
+    background-color: var(--light-blue);
+}
+
+article[class*='group'] {
+    background-color: var(--beige);
+}

@@ -1,0 +1,49 @@
+@import url(root.css);
+
+:root {
+    --review-border-radius: 2rem;
+}
+
+.review {
+    display: grid;
+    grid-template-areas: 
+        "title      title"
+        "image      txt";
+
+    max-width: 27em;
+    grid-template-columns: 9em 18em;
+    grid-template-rows: 0.25fr 0.75fr;
+
+    border-bottom-right-radius: 2em;
+    border-radius: var(--review-border-radius);
+}
+
+.review > h3 {
+    grid-area: title;
+    color: white;
+    background: var(--main-color);
+    text-align: center;
+    padding: 0.5em;
+    margin: 0em;
+    border-bottom: 2px solid black;
+    border-radius: var(--review-border-radius) var(--review-border-radius) 0 0;
+}
+
+.review > img {
+    grid-area: image;
+    width: 0.75fr;
+    height: 0.75fr;
+    overflow: hidden;
+    object-fit: cover;
+    border-bottom-left-radius: var(--review-border-radius);
+}
+
+.review > p {
+    grid-area: txt;
+    text-align: justify;
+    background: var(--secondary-color);
+    padding: 0em 0.75em;
+    margin: 0;
+    max-height: fit-content;
+    border-radius: 0em 0em var(--review-border-radius) 0em;
+}

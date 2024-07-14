@@ -1,0 +1,114 @@
+@import url(root.css);
+
+html {
+    background: var(--beige);
+}
+
+body {
+    font-family: 'Roboto';
+    max-width: 75em;
+    margin: 0 auto;
+    border: 2px solid var(--main-color);
+    background: white;
+}
+
+/** header **/
+header {
+    margin-top: 4.5em;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+main {
+    max-width: 65em;
+    margin: 0 auto;
+}
+
+main > p {
+    text-align: justify;
+    margin: 2em 3em;
+}
+
+#pricing {
+    margin: 0 5em;
+    border-radius: 2rem;
+    background: var(--main-color);
+}
+
+#pricing > h2 {
+    text-align: center;
+    color: white;
+    padding-top: 1rem;
+    border-radius: 2rem 2rem 0 0;
+}
+
+#pricing > img {
+    float: right;
+    display: inline;
+    max-width: 40%;
+    max-height: 100%;
+    padding-left: 1em;     
+}
+
+#pricing > p {
+    padding: 1em;
+    background-color: var(--secondary-color);
+    margin: 0;
+}
+
+#pricing > a {
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: var(--main-color);
+    padding: 1rem 0;
+    border-radius: 0 0 2rem 2rem;
+}
+
+#pricing > a:visited {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    #main > p {
+        margin: 2em 0;
+    }
+
+    #pricing {
+        margin: 0 0.5em;
+    }
+
+    #pricing > img {
+        max-height: 95%;
+        max-width: 95%;
+        display: block;
+        float: none;
+        padding: 0 0 2.5% 0;
+        margin: 0 auto;
+    }
+}
+
+/** reviews **/
+#reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#reviews > h2 {
+    flex-basis: 100%;
+}
+
+/** footer **/
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: var(--main-color);
+}

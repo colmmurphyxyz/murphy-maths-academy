@@ -1,0 +1,27 @@
+@import url(root.css);
+
+nav {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: flex-end;
+
+    background-color: var(--main-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1em;
+    border: 2px solid var(--main-color)
+}
+
+nav a:hover {
+    background-color: #85B3D1;
+    transition: 0.5s;
+    color: white;
+    font-weight: bold;
+}
